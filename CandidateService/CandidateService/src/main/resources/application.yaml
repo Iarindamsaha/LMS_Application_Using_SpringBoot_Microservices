@@ -1,0 +1,22 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: CANDIDATE-SERVICE
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: Killjoy@15071998
+    url: jdbc:mysql://localhost:3306/candidate_service
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka

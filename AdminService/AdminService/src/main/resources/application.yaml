@@ -1,0 +1,14 @@
+server:
+  port: 8092
+spring:
+  application:
+    name: ADMIN-SERVICE
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8762/eureka
