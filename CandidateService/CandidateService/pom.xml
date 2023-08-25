@@ -82,6 +82,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+		<finalName>candidate_service_lms</finalName>
 	</build>
 
 </project>

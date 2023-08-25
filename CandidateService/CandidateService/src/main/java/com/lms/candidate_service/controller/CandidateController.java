@@ -3,13 +3,13 @@ package com.lms.candidate_service.controller;
 import com.lms.candidate_service.entity.CandidateModel;
 import com.lms.candidate_service.responses.Response;
 import com.lms.candidate_service.service.ICandidateService;
-import org.apache.http.client.protocol.ResponseProcessCookies;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@RestController
+@Controller
 @RequestMapping("/candidate")
 public class CandidateController {
 
